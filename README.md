@@ -10,6 +10,12 @@ This is a full stack blog application consists of several features -
 ## Why React?
 It makes creating a website simpler and faster without taking away any of the fine grained control from the programmer. It allow us to create modular reusable components that can then be arranges into fully functional website instead of hand coding each individual page in our site.
 
+## Why Node.js?
+We don't have to depend on PHP or Python or Java for backend, instead we can use javascript for both frontend and backend. There are many different npm packages that can be used to create Node.js servers, The one that We are using is Express.
+
+### Why Express?
+It is a great choice for us because it is unopinionated, it's very easy to get started with, very well documented. And most importantly there are a ton of third-party add-ons that can be used to extend Express's functionality.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
