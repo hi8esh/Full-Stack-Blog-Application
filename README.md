@@ -8,9 +8,6 @@ This is a full stack blog application consists of several features -
 
 
 ## Why React?
-<<<<<<< HEAD
-It makes creating a website simpler and faster without taking away any of the fine grained control from the programmer. It allow us to create modular reusable components that can then be arranges into fully functional website instead of hand coding each individual page in our site.
-=======
 It makes creating a website simpler and faster without taking away any of the fine grained control from the programmer. It allow us to create modular reusable components that can then be arranges into fully functional website instead of hand coding each individual page in our site.
 
 ## Why Node.js?
