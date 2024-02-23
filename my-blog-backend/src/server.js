@@ -48,7 +48,7 @@ app.put('/api/articles/:name/upvote', async (req, res) => {
     const article = await db.collection('articles').findOne({ name });
     
     if(article){
-        res.send(`The ${name} article now has ${article.upvotes} upvotes!!!`);
+        res.json(article);
     }
     else{
         res.send('That article doesn\'t exist');
@@ -59,20 +59,17 @@ app.put('/api/articles/:name/upvote', async (req, res) => {
 app.post('/api/articles/:name/comments', async (req, res) => {
     const { name } = req.params;
     const { postedBy, text } = req.body;
-    
-    await db.collection('articles').updateOne({ name }, { 
-        $push: { comments: {postedBy, text}},
-     });
-    
-    const article = await db.collection('articles').findOne({ name });
-    
-    if(article){
-        res.send(article.comments);
-    }
-    else{
-        res.send('That article doesn\'t exist');
-    }
 
+    await db.collection('articles').updateOne({ name }, {
+        $push: { comments: { postedBy, text } },
+    });
+    const article = await db.collection('articles').findOne({ name });
+
+    if (article) {
+        res.json(article);
+    } else {
+        res.send('That article doesn\'t exist!');
+    }
 });
 
 connectToDb(() => {
