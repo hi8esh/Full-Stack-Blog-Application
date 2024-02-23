@@ -19,6 +19,9 @@ It is a great choice for us because it is unopinionated, it's very easy to get s
 ## Why MongoDB?
 As both of our cient and server side are written in JavaScript, it makes send to persist our data in a database that plays very nicely with JavaScript and has a similar format to the kind of data that we want to store. MongoDB is a non-relational database, and we can just push JavaScript data into it without worrying too much how that data is formatted. We can just hand our database any kind of JSON and it will just store that for us and allow us to retrieve them later.
 
+# Axios
+Axios is a popular library for making network requests, ad it can be installed into either front end or back end projects, and used to make any type of requests to pretty much any URL.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
