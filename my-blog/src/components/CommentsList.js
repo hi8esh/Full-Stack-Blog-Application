@@ -1,4 +1,4 @@
-const CommentsList = ( { comments } ) => (
+const CommentsList = ({ comments }) => (
     <>
     <h3>Comments:</h3>
     {comments.map(comment => (
